@@ -4,3 +4,6 @@ pip install langchain-community
 pip install langchainhub
 pip install langchain-ollama
 pop install dotenv
+
+ollama pull mistral
+ollama pull llama3
