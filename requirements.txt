@@ -3,3 +3,4 @@ pip install langchain-openai
 pip install langchain-community
 pip install langchainhub
 pip install langchain-ollama
+pop install dotenv
