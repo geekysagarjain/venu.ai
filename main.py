@@ -5,12 +5,12 @@ from langchain_ollama import ChatOllama
 from langchain_core.output_parsers.string import StrOutputParser
 
 information="""
-Who is Elon Musk
+Bill Gates
 """
 
 if __name__ == '__main__':
     print('hello langchain')
-    summary_template = """ give the information {information} about a person form I want you to create: 
+    summary_template = """ give the information about {information} person form I want you to create: 
     1) A short summary
     2) Two interesting facts about them
     """
