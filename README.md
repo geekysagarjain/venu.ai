@@ -1,5 +1,4 @@
-﻿🔍 LLM-Powered Name Insights Generator
-This project is an LLM-based application that takes a name as input and returns a summary and interesting facts about the individual, intelligently generated using insights derived from LinkedIn data.
+﻿This project is an LLM-based application that takes a name as input and returns a summary and interesting facts about the individual, intelligently generated using insights derived from LinkedIn data.
 
 🚀 Features
 
