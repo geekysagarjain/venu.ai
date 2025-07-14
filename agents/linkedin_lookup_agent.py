@@ -6,7 +6,6 @@ from langchain_core.tools import Tool
 from langchain.agents import(create_react_agent, AgentExecutor)
 from langchain import hub
 from tools.tavily import get_profile_url_tavily
-from langchain_core.output_parsers.string import StrOutputParser
 
 
 load_dotenv()
@@ -31,11 +30,7 @@ def lookup(name: str) -> str:
     agent=create_react_agent(llm=llm, tools=tool_for_agent, prompt=react_prompt)
     agent_executor=AgentExecutor(agent=agent, tools=tool_for_agent, verbose=True)
 
-    parser = StrOutputParser()
-
-    result = parser.parse(agent_executor.invoke(
-        input={"input" : prompt_template.format_prompt(name_of_the_person=name)}
-        )) 
+    result = agent_executor.invoke(input={"input" : prompt_template.format_prompt(name_of_the_person=name)})
     
 
     linkedin_profile_url=result["output"]
