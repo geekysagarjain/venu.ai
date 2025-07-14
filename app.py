@@ -16,11 +16,11 @@ def index():
 @app.route("/process", methods=["POST"])
 def process():
     name = request.form["name"]
-    summary, photoUrl = ice_break_with(name=name)
+    summary, picture_url = ice_break_with(name=name)
     return jsonify(
         {
             "summary_and_facts": summary.to_dict(),
-            "photoUrl": photoUrl
+            "photoUrl": picture_url
         }
     )
 
