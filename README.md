@@ -18,5 +18,5 @@
 ⚠️ Disclaimer
 	
  	This app is a proof of concept and does not scrape LinkedIn directly. It is designed to demonstrate how LLMs can simulate real-world research scenarios using assumed or mock LinkedIn-style data.
-  	Learned from https://github.com/emarco177/ice_breaker
+  	Learned this from eden marco
  
